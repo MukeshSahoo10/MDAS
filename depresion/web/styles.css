@@ -1,0 +1,67 @@
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#questionnaire {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+h1 {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="text"] {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#questionnaire:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1:hover,
+label:hover {
+    color: #0056b3;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
